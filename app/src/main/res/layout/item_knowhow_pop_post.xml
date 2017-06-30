@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_board_pop"
+              android:gravity="center_vertical"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/ll_item_knowhow_board_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_board_knowhow_item_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="게시물 이름이 표시됩니다."
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/tv_board_knowhow_author_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="By 작성자닉네임"
+                android:maxLines="1"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_item_knowhow_board_content"
+            android:layout_below="@id/ll_item_knowhow_board_header"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_board_knowhow_item_image"
+                android:layout_width="@dimen/list_knowhow_board_image_size"
+                android:layout_height="@dimen/list_knowhow_board_image_size"
+                android:src="@drawable/null_image"
+                android:layout_alignParentLeft="true"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_board_knowhow_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_board_knowhow_item_image"
+                android:layout_below="@id/tv_board_knowhow_item_title"
+                android:text="게시물 내용이 입력됩니다. 게시물 내용이 입력됩니다. 게시물 내용이 입력됩니다. 게시물 내용이 입력됩니다."
+                android:textColor="#000"
+                android:maxLines="5"/>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:paddingRight="20dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+                
+                <ImageView
+                    android:layout_width="@dimen/list_knowhow_board_icon_size"
+                    android:layout_height="@dimen/list_knowhow_board_icon_size"
+                    android:src="@drawable/comments_black_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_board_knowhow_item_count_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="28"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/list_knowhow_board_icon_size"
+                    android:layout_height="@dimen/list_knowhow_board_icon_size"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/like_black_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_board_knowhow_item_count_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="28"
+                    android:textSize="20sp"/>
+                
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

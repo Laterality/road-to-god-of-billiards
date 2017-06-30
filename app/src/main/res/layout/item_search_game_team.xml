@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_search_game_team"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/tv_search_team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="team_name"
+                android:textSize="28sp"
+                android:textColor="#000"/>
+
+            <View
+                style="?android:attr/dividerVertical"
+                android:layout_width="1dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#000"/>
+
+            <TextView
+                android:id="@+id/tv_search_team_leader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="team_leader"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/tv_search_team_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="team_member_count"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/tv_search_team_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="team_win_rate"
+                android:textColor="#000"/>
+
+
+            <TextView
+                android:id="@+id/tv_search_team_avg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="team_avg_score"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_search_team_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="team_description"
+            android:textColor="#000"
+            android:layout_above="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="대전신청"
+            android:textColor="#000"
+            android:layout_below="@+id/linearLayout"
+            android:background="@color/colorDivider2"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">당신의 지름길</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="list_left_drawer_1">
+        <item>노하우 게시판</item>
+        <item>대전상대 찾기</item>
+        <item>나의 팀</item>
+        <item>당신의 지름길</item>
+        <item>마이페이지</item>
+    </string-array>
+
+    <string-array name="list_left_drawer_2">
+        <item>공지사항</item>
+        <item>환경설정</item>
+        <item>게임정보</item>
+        <item>로그아웃</item>
+    </string-array>
+
+    <string-array name="list_right_drawer">
+        <item>공지사항</item>
+        <item>환경설정</item>
+        <item>게임정보</item>
+        <item>로그아웃</item>
+    </string-array>
+
+    <string-array name="team_function_leader">
+        <item>설명 변경</item>
+        <item>초대</item>
+        <item>팀 해체</item>
+    </string-array>
+
+    <string-array name="team_function_member">
+        <item>팀 탈퇴</item>
+    </string-array>
+
+    <string-array name="knowhow_board_function">
+        <item>글쓰기</item>
+        <item>내가 쓴 글</item>
+        <item>보관함</item>
+        <item>내 소식</item>
+    </string-array>
+
+    <string-array name="knowhow_post_reply_function">
+        <item>답댓글 달기</item>
+    </string-array>
+
+    <string-array name="score_range">
+        <item>60</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+    </string-array>
+
+    <string-array name="testing_memeber">
+        <item>철수</item>
+        <item>영희</item>
+        <item>바둑이</item>
+    </string-array>
+
+    <string-array name="testing_member2">
+        <item>지르코늄</item>
+        <item>아지화나트륨</item>
+        <item>산화이수소</item>
+        <item>PM5미세먼지</item>
+        <item>죽음은바람과도같지</item>
+        <item>독산동총잡이</item>
+        <item>두정동큐잡이</item>
+    </string-array>
+
+    <string-array name="my_posts_posts_long_click_function">
+        <item>게시글 삭제</item>
+        <item>게시글 수정</item>
+    </string-array>
+</resources>

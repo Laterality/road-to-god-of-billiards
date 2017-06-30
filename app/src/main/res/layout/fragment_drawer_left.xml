@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/left_drawer_width"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_area_height"
+        android:background="@color/profile_background_color">
+
+        <ImageView
+            android:id="@+id/iv_default_profile_image"
+            android:layout_width="@dimen/profile_image_size"
+            android:layout_height="@dimen/profile_image_size"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="left"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/default_user_icon"/>
+
+        <TextView
+            android:id="@+id/tv_profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView"
+            android:layout_alignLeft="@+id/iv_default_profile_image"
+            android:layout_alignStart="@+id/iv_default_profile_image"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:text="플레이어명"
+            android:textColor="@color/profile_name_textColor"
+            android:textSize="@dimen/profile_name_textSize"/>
+
+        <ImageView
+            android:id="@+id/iv_profile_edit_username"
+            android:layout_width="@dimen/profile_icon_edit_size"
+            android:layout_height="@dimen/profile_icon_edit_size"
+            android:layout_alignEnd="@+id/iv_default_profile_image"
+            android:layout_alignRight="@+id/iv_default_profile_image"
+            android:layout_below="@+id/iv_default_profile_image"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/pencil"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_profile_username"
+            android:layout_alignStart="@+id/tv_profile_username"
+            android:layout_below="@+id/iv_profile_edit_username"
+            android:maxLines="1"
+            android:text="[유저등급]"
+            android:textColor="@color/profile_tier_textColor"
+            android:textSize="@dimen/profile_tier_textSize"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#595959">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#595959"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_drawer_left_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:divider="#00000000"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/drawable_null"/>
+
+            <ListView
+                android:id="@+id/lv_drawer_left_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:divider="#00000000"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

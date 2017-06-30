@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingTop="16dp"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+    android:background="#626262">
+    <!-- BEGIN : header clock -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Chronometer
+            android:id="@+id/ch_game_timer"
+            android:layout_width="@dimen/activity_game_timer_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:background="@color/background_game_timer"
+            android:textColor="#fff"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+    <!-- END : header clock -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.primitive.road_to_god_of_billiard.views.ScoreBoardView
+            android:id="@+id/sb_game_op_score"
+            android:layout_width="@dimen/game_oppo_scoreboard_width"
+            android:layout_height="@dimen/game_oppo_scoreboard_height"
+            android:layout_marginRight="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_game_op_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="#fff"
+            android:textSize="36sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+           <ImageButton
+               android:id="@+id/ibtn_game_score_up"
+               android:layout_width="@dimen/game_score_button_size"
+               android:layout_height="@dimen/game_score_button_size"
+               android:src="@drawable/drawable_null"/>
+
+            <TextView
+                android:id="@+id/tv_game_my_score"
+                android:layout_width="@dimen/game_score_text_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00"
+                android:textSize="48sp"
+                android:textColor="#fff"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_game_score_down"
+                android:layout_width="@dimen/game_score_button_size"
+                android:layout_height="@dimen/game_score_button_size"
+                android:src="@drawable/drawable_null"/>
+
+        </LinearLayout>
+
+        <com.primitive.road_to_god_of_billiard.views.ScoreBoardView
+            android:id="@+id/sb_game_my_score"
+            android:layout_width="@dimen/game_my_scoreboard_width"
+            android:layout_height="@dimen/game_my_scoreboard_height"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

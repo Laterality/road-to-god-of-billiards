@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_search_game_indi"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="8dp"
+            android:text="점수선택"
+            android:textColor="#fff"
+            android:textSize="24sp"/>
+
+        <Spinner
+            android:id="@+id/sp_search_individual_score_min"
+            android:layout_width="@dimen/search_game_range_form_width"
+            android:layout_height="24dp"
+            android:background="#fff"
+            android:entries="@array/score_range"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="~"
+            android:textColor="#000"
+            android:textSize="32sp"/>
+
+        <Spinner
+            android:id="@+id/sp_search_individual_score_max"
+            android:layout_width="@dimen/search_game_range_form_width"
+            android:layout_height="24dp"
+            android:background="#fff"
+            android:entries="@array/score_range"
+            android:spinnerMode="dropdown"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_search_game_individual_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_search_game_indi"
+        android:entries="@array/testing_member2"/>
+
+</LinearLayout>

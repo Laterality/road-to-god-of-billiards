@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_board_kn_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_board_know_how_top_height"
+                android:layout_alignParentTop="true"
+                android:background="@color/custom_gray"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="294dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="마지막으로 한 게임"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_main_last_game"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:text="1시간 전"
+                                android:textColor="@color/colorPrimaryText"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.primitive.road_to_god_of_billiard.views.RatingView_Pie
+                                android:id="@+id/rv_knowhow_rating"
+                                android:layout_width="@dimen/chart_rate_size"
+                                android:layout_height="@dimen/chart_rate_size"
+                                android:layout_gravity="top"
+                                android:layout_marginLeft="10dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_count_play"
+                                    android:layout_width="43dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="50전"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="20sp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_count_win"
+                                    android:layout_width="43dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="29승"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="20sp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_count_lose"
+                                    android:layout_width="43dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="21패"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="20sp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="최고점수"
+                        android:textColor="#fff"
+                        android:maxLines="2"
+                        android:gravity="right"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_board_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ll_board_kn_top"
+                android:background="@color/custom_green_2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="5dp"
+                        android:text="[뜨는 노하우]"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="17sp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/video_image_width"
+                        android:layout_height="@dimen/video_image_height"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/video_exam"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tv_video_name"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="0.73"
+                            android:text="동영상 제목"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="17sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="by"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="17sp"/>
+                        <TextView
+                            android:id="@+id/tv_main_knowhow_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="작성자 이름"
+                            android:gravity="right"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="17sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/comments_icon"/>
+
+                        <TextView
+                            android:id="@+id/tv_comments_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="0.12"
+                            android:text="28"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="17sp"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/like_icon"/>
+
+                        <TextView
+                            android:id="@+id/tv_like_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="0.12"
+                            android:text="76"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="17sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

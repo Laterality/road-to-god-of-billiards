@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/custom_gray"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_has_no_team_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/team_image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="50dp"
+        android:text="현재 가입된 팀이 없습니다."/>
+
+    <Button
+        android:id="@+id/btn_has_no_team_make_team"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="@color/background_search_game_team"
+        android:text="팀 개설하기"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_has_no_team_establishing_fragments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+</LinearLayout>

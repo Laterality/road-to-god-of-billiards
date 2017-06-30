@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_knowhow_post_rereply"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/sv_knowhow_post_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- BEGIN : post header-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_popup_post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="post_title"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_popup_post_author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="post_author"
+                        android:textColor="#000"
+                        android:textSize="12sp"/>
+
+                    <View
+                        style="?android:attr/dividerVertical"
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#000"/>
+
+                    <TextView
+                        android:id="@+id/tv_popup_post_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="post_date"
+                        android:textColor="#000"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/popup_post_icon_size"
+                        android:layout_height="@dimen/popup_post_icon_size"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/comments_black_icon"/>
+
+                    <TextView
+                        android:id="@+id/tv_popup_post_count_reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="count_reply"
+                        android:textColor="#000"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/popup_post_icon_size"
+                        android:layout_height="@dimen/popup_post_icon_size"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/like_black_icon"/>
+
+                    <TextView
+                        android:id="@+id/tv_popup_post_count_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="count_like"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!-- END : post header-->
+
+            <View
+                style="?android:attr/dividerHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorDivider2"/>
+
+            <!-- BEGIN : post content-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                <TextView
+                    android:id="@+id/tv_popup_post_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="post_content"
+                    android:textColor="#000"/>
+
+            </LinearLayout>
+            <!-- END : post content-->
+
+            <View
+                style="?android:attr/dividerHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorDivider2"/>
+
+            <!-- BEGIN : hash tags-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#post_hash_tag"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+            <!-- END : hash tagst-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="@dimen/popup_post_icon_size"
+                    android:layout_height="@dimen/popup_post_icon_size"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/comments_black_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_popup_post_count_reply2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="count_reply"
+                    android:textColor="#000"/>
+
+                <ImageView
+                    android:id="@+id/iv_knowhow_post_like"
+                    android:layout_width="@dimen/popup_post_icon_size"
+                    android:layout_height="@dimen/popup_post_icon_size"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/like_black_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_popup_post_count_like2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="count_like"
+                    android:textColor="#000"/>
+
+            </LinearLayout>
+
+            <!-- BEGIN : post comments -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/et_knowhow_post_reply_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:hint="댓글을 입력하세요"
+                    android:textColorHint="#000"
+                    android:textColor="#000"
+                    android:background="@color/background_reply_form"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btn_write_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="등록"/>
+            </LinearLayout>
+            <!-- END : post comments -->
+
+            <View
+                style="?android:attr/dividerHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorDivider3"/>
+
+            <ListView
+                android:id="@+id/lv_popup_post_reply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="none"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

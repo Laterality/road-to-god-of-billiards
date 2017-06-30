@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_my_page_individual"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/board_knowhow_tabwidget_height"
+            android:layout_weight="1"
+            android:text="개인"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="#ff5555"/>
+
+        <Button
+            android:id="@+id/btn_my_page_team"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/board_knowhow_tabwidget_height"
+            android:layout_weight="1"
+            android:text="팀"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#55ff55"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_my_page_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

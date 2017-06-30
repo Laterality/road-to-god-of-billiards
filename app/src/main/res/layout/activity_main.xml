@@ -1,0 +1,63 @@
+<LinearLayout
+    android:id="@+id/ll_root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/dl_drawer_layout_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_background_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.DrawerLayout
+                android:id="@+id/dl_drawer_layout_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_background_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/include_toolbar"/>
+
+
+                        <FrameLayout
+                            android:id="@+id/fl_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#fff"/>
+
+                </LinearLayout>
+
+
+                <fragment
+                    android:id="@+id/fragment_right_drawer"
+                    android:name="com.primitive.road_to_god_of_billiard.fragments.RightDrawerFragment"
+                    android:layout_width="@dimen/right_drawer_width"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    tools:layout="@layout/fragment_drawer_right"/>
+            </android.support.v4.widget.DrawerLayout>
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/fragment_left_drawer"
+            android:name="com.primitive.road_to_god_of_billiard.fragments.LeftDrawerFragment"
+            android:layout_width="@dimen/left_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            tools:layout="@layout/fragment_drawer_left"/>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

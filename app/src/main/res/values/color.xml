@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#595959</color>
+    <color name="colorPrimaryDark">#404040</color>
+    <color name="colorPrimaryLight">#FFE0B2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryText">#FFFFFF</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorDivider">#B6B6B6</color>
+
+    <color name="colorDivider2">#D2D2D2</color>
+    <color name="colorDivider3">#9F9F9F</color>
+
+    <color name="profile_background_color">#3465aa</color>
+    <color name="profile_name_textColor">#ffffff</color>
+    <color name="profile_tier_textColor">#ffc000</color>
+    <color name="background_board_pop">#00CC99</color>
+    <color name="background_board_lat">#00B0F0</color>
+    <color name="background_reply_form">#E5E5E5</color>
+    <color name="background_game_timer">#9966FF</color>
+
+    <color name="background_search_game_team">#9966ff</color>
+    <color name="background_search_game_indi">#bfbfbf</color>
+
+    <color name="custom_green">#09a274</color>
+    <color name="custom_green_2">#00cc99</color>
+    <color name="custom_yellow_green">#64CD3C</color>
+    <color name="custom_orange">#FFB400</color>
+    <color name="custom_gray">#404040</color>
+
+</resources>
